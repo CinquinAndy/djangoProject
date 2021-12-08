@@ -8,3 +8,4 @@ urlpatterns = [
     path('hello/', views.hello, name="hello"),
     path('result/<int:number>', views.result, name="result"),
 ]
+
