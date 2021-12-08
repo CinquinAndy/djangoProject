@@ -5,11 +5,14 @@
     <title>Test</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-900">
-<section class="p-20 text-gray-50 flex justify-center items-center flex-col">
+<body class="bg-gray-900 text-gray-50 flex flex-col">
+<section class="p-20 flex justify-center items-center flex-col">
     <h1 class="text-5xl font-bold">Bienvenue sur Django - INDEX !</h1>
 </section>
-<section>
+<section class="p-10 flex justify-center w-full">
+    <img src="https://andy-cinquin.fr/images/logoAnimeeNoLoop_End.png" alt="loop">
+</section>
+<section class="px-36">
     <section>
         <article>
             test moustache : {{ valeur }}
@@ -17,9 +20,10 @@
     </section>
     <section class="mt-10">
         {% for value in table %}
-            <h2>{{ value }}</h2>
+            <h2 class="text-2xl">{{ value }}</h2>
         {% endfor %}
     </section>
 </section>
+
 </body>
 </html>
