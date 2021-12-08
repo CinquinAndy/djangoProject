@@ -5,21 +5,21 @@
     <title>Test</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="">
-<h1>Bienvenue sur Django - INDEX !</h1>
-<section>
-    <article>
-        test moustache : {{ valeur }}
-    </article>
+<body class="bg-gray-900">
+<section class="p-20 text-gray-50 flex justify-center items-center flex-col">
+    <h1 class="text-5xl font-bold">Bienvenue sur Django - INDEX !</h1>
 </section>
-{#<br>#}
-{#<h3>1</h3>#}
-{#<h3>2</h3>#}
-{#<h3>3</h3>#}
-<br>
-{% for te in table %}
-    <h1>{{ te }}</h1>
-{% endfor %}
-
+<section>
+    <section>
+        <article>
+            test moustache : {{ valeur }}
+        </article>
+    </section>
+    <section class="mt-10">
+        {% for value in table %}
+            <h2>{{ value }}</h2>
+        {% endfor %}
+    </section>
+</section>
 </body>
 </html>
