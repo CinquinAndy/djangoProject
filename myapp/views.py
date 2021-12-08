@@ -1,9 +1,12 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.template import context, Context
 
 
 def index(request):
-    return render(request, './index.html')
+    contextvalue = {"valeur": "valeurTest", "table": [1, 2, 3, 4, 5]}
+    # context.Context.push(test)
+    return render(request, 'index.html', contextvalue)
     # return HttpResponse("<h1>Bienvenue sur Django - INDEX !</h1>")
 
 
